@@ -1,10 +1,52 @@
-# Quick Start
+# 快速开始 Quick Start
 
-These steps will help you start FBT system easy and quick.
+接下来的步骤会帮助你快速的上手MakiFBT
 
-## Personal Computer Settings
+The next steps will help you quickly get started with MakiFBT
 
-run unity.exe
+## 打印ArUco贴纸 Print ArUco pattern
+
+ArUco是一个开源的小型的AR虚拟现实增强库。一个ArUco标记外围都有一组黑色边框，同时内部有着确定该标记ID的二维矩阵组合而成。黑色的边框能加速标记在图像中的检测速度，内部的二维编码能唯一识别该标记，同时进行错误检测和错误修复。
+
+ArUco is an open source small AR virtual reality augmentation library. An ArUco mark has a set of black borders on the periphery, and a two-dimensional matrix that determines the mark ID inside. The black border can speed up the detection speed of the mark in the image, and the internal two-dimensional code can uniquely identify the mark, and perform error detection and error correction at the same time.
+
+在MakiFBT中，我们使用如下的ArUco图案
+
+In MakiFBT we use the ArUco pattern as follows
+
+![ArUcoTag](image/ArUco.png#pic_center=256x256 "ArUco")
+
+将图案打印到白色的A4纸上(使用全页照片，并取消适应边框打印。图案应该不发生变形的占据纸张的尽可能多的空间)，我们的ArUco贴纸便制作完成了。
+
+Print the pattern on a white A4 paper (use a full-page photo, and cancel the fit frame printing. The pattern should occupy as much space as possible on the paper without deformation), and our ArUco pattern is finished.
+
+## 电脑上的设置 Personal Computer Settings
+
+### VMT设置 VMT Setup
+
+Virtual Motion Tracker (VMT) 是一种易于使用的 OpenVR 虚拟跟踪器驱动程序。 您可以使用 OSC 协议发送姿势（位置和旋转）并将其用作 SteamVR 上的虚拟跟踪器。 您可以在 [VirtualMotionTrackerDocument](https://gpsnmeajp.github.io/VirtualMotionTrackerDocument/)上了解有关 VMT 的更多信息。
+
+Virtual Motion Tracker(VMT) is an easy-to-use virtual tracker driver for OpenVR. You can send pose (position and rotation) with OSC Protocol and use it as a virtual tracker on SteamVR. You can learn more about VMT on [VirtualMotionTrackerDocument](https://gpsnmeajp.github.io/VirtualMotionTrackerDocument/).
+
+MakiFBT 需要VMT与SteamVR通信。 没有VMT系统将无法工作。
+
+MakiFBT Requires VMT to communicate with SteamVR. System will not work without VMT.
+
+我们在 vmt_013c 上测试了我们的系统。 您可以[在此处下载](https://github.com/gpsnmeajp/VirtualMotionTracker/releases/download/v0.13c/vmt_013c.zip)。
+
+We tested our system on vmt_013c. You can download [HERE](https://github.com/gpsnmeajp/VirtualMotionTracker/releases/download/v0.13c/vmt_013c.zip).
+
+可以在[VMT发布页面](https://github.com/gpsnmeajp/VirtualMotionTracker/releases)上找到较新版本的 VMT。 但是，不能保证性能。
+
+Newer version of VMT can be found on [VMT Release Page](https://github.com/gpsnmeajp/VirtualMotionTracker/releases). HOWEVER, performance is not guaranteed.
+
+要安装 VMT，请解压缩存档，打开vmt_manager文件夹，在运行SteamVR并连接VR设备的情况下运行vmt_manager.exe。单击安装，VMT就会被添加到SteamVR的驱动中。
+
+To install VMT, unzip the archive, open **vmt_manager** folder, run **vmt_manager.exe** with SteamVR running and VR devices connected. Click install and you are ready to go.
+
+### MakiFBT设置 MakiFBT Setup
+
+
 
 ## Android Settings
 
