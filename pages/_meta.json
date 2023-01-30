@@ -2,6 +2,8 @@
   "index": "Introduction",
   "quickstart": "Quick Start",
   "guide": "Guide",
+  "help": "Help & Troubleshooting",
+  "download": "Download",
   "about": {
     "title": "About",
     "type": "page"
