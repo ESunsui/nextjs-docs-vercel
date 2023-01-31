@@ -1,7 +1,8 @@
 {
   "index": "Introduction",
   "quickstart": "Quick Start",
-  "guide": "Guide",
+  "guide-pc": "Guide - MakiFBT",
+  "guide-mobile": "Guide - MakiAndroid",
   "help": "Help & Troubleshooting",
   "download": "Download",
   "about": {

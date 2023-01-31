@@ -1,0 +1,10 @@
+{
+  "dashboard": "SteamVR Interface",
+  "page_swap": "Swap Pages",
+  "param_modify": "Parameter Modification",
+  "toggle_disp_item": "Toggle Display Item",
+  "tracker_recal": "Tracker Recalibration",
+  "tracking_mode_switch": "Tracking Mode Switch",
+  "smoothing": "Smoothing",
+  "system_recal": "FBT System Control"
+}
