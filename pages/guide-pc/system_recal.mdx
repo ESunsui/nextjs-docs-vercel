@@ -4,25 +4,42 @@
 
 这些按键是对于整个FBT系统的操作。
 
+These keys are for the operation of the entire FBT system.
+
 ## Start Detection
 
 点击按钮来开始全身动作追踪。按下按钮后，系统会从各个边缘设备收集信息，开始3D关键点的重建。
+
+Click the button to start full body motion tracking. After pressing the button, the system collects information from each edge device and starts the reconstruction of 3D key points.
 
 ## Stop Detection
 
 点击按钮来停止全身追踪。按下按钮后，系统会停止各个边缘设备的视频流采集，停止关键点的重建。
 
+Click the button to stop full body tracking. After pressing the button, the system will stop the video stream acquisition of each edge device and stop the reconstruction of key points.
+
 ## Recalibrate System
 
 重新校准整个FBT系统。系统会从各个边缘设备重新采集图像，校准位置关系。
 
+Recalibrate the entire FBT system. The system will re-acquire images from each edge device to calibrate the positional relationship.
+
 这操作应该在你意外移动某个设备后执行。这将会移除所有已知设备，重新进行网络发现与配对，将它们作为新设备对待。
+
+This should be done after you accidentally move a device. This will remove all known devices, rediscover and pair them, and treat them as new.
 
 为了用户隐私考虑，我们不会自动的触发手机端拍照逻辑。使用Android手机的用户，请依照“快速开始”章节的设置重新摆放ArUco图案，重新拍照。在完成边缘设备的拍照后，再点击重新校准按钮。只有您拍摄的这一张图片会被传输到电脑并严格在本机处理。
 
+For the sake of user privacy, we will not automatically trigger the camera logic on the mobile phone. Users using Android phones, please rearrange the ArUco pattern according to the settings in the "Quick Start" chapter, and take a photo again. After you finish taking pictures of the edge device, click the recalibration button. Only the picture you took will be transferred to the computer and processed strictly locally.
+
 视情况，重新校准的过程可能持续数十秒，还请耐心等待。
+
+Depending on the situation, the recalibration process may last tens of seconds, please wait patiently.
 
 ## Show Calib image
 
 展示用来矫正的图片。重新校正时按键会变得不可交互，当这一按钮重新亮起并且显示的图片都正常时，一般代表校准完成。
 
+Show the image used for correction. When recalibrating, the button will become non-interactive. When the button lights up again and the displayed pictures are normal, it usually means that the calibration is complete.
+
+![makifbt_srca_2](image/guide_makifbt/14.jpg#pic_center)
