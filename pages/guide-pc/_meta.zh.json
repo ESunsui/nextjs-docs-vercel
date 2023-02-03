@@ -1,0 +1,10 @@
+{
+  "dashboard": "SteamVR界面",
+  "page_swap": "页面切换",
+  "param_modify": "参数调整",
+  "toggle_disp_item": "展示项",
+  "tracker_recal": "重新校准追踪器",
+  "tracking_mode_switch": "追踪模式",
+  "smoothing": "平滑控制",
+  "system_recal": "系统控制"
+}

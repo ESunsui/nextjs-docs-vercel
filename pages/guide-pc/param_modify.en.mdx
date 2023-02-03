@@ -1,54 +1,34 @@
 # Parameter Modification
 
-在MakiFBT中，我们定义了一系列参数来完成真实空间与游戏世界的映射关系。只有合理的参数才能使你获得正确的动作捕捉结果。
-
 In MakiFBT, we define a series of parameters to complete the mapping relationship between the real space and the game world. Only reasonable parameters can enable you to obtain correct motion capture results.
-
-在MakiFBT中，这一系列参数可以依据您的状态自动的生成，这一系列参数在大多数时候都是正确的。
 
 In MakiFBT, this series of parameters can be automatically generated according to your state, and this series of parameters is correct most of the time.
 
-然而，如果参数出现了问题，或是您想要做一些微调，您可以直接对最主要的几个参数直接做出修改。
-
 However, if there is a problem with the parameters, or if you want to do some fine-tuning, you can directly modify the most important parameters.
-
-要手动超控参数，请勾选“Enable Parameter Modification”选项框。
 
 To manually override a parameter, check the Enable Parameter Modification option box.
 
 ![makifbt_param_1](image/guide_makifbt/5.jpg#pic_center)
 
-## 平面位置参数 Plane position parameter
-
-平面位置参数用来调节您在空间中的前后左右位置。可以调节Left/Right, Front/Back两个参数。
+## Plane position parameter
 
 The plane position parameter is used to adjust your front, back, left, and right positions in the space. You can adjust the Left/Right, Front/Back two parameters.
-
-当您发现您的位置与生成追踪器的位置存在差异时，可以调节这两个参数。
 
 These two parameters can be adjusted when you find that your location differs from where the tracker was generated.
 
 ![makifbt_param_2](image/guide_makifbt/15-1.jpg#pic_center)
 
-## 旋转参数 Rotation parameter
-
-旋转参数用来调节您在空间中绕世界原点的旋转。
+## Rotation parameter
 
 The rotation parameter is used to adjust your rotation in space around the world origin.
-
-当您发现您的您的动作方向与Tracker的运动方向不一致时，可以首先调节旋转参数对齐旋转，随后调节位置参数对齐位置。
 
 When you find that your movement direction is inconsistent with the Tracker's movement direction, you can first adjust the rotation parameter to align the rotation, and then adjust the position parameter to align the position.
 
 ![makifbt_param_3](image/guide_makifbt/15-2.jpg#pic_center)
 
-## 缩放参数 Scaling Parameter
-
-缩放参数用来调节您在空间中的尺寸。
+## Scaling Parameter
 
 The scale parameter is used to adjust your size in space.
-
-当您发现您的您的动作幅度与Tracker的运动幅度不一致时，调节缩放参数。
 
 When you find that your range of motion is inconsistent with that of the Tracker, adjust the scaling parameter.
 

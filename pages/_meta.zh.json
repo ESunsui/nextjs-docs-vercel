@@ -1,0 +1,18 @@
+{
+  "index": "介绍",
+  "quickstart": "快速上手",
+  "guide-pc": "说明 - MakiFBT",
+  "guide-mobile": "说明 - MakiAndroid",
+  "help": "帮助与常见问题",
+  "download": "下载",
+  "about": {
+    "title": "关于",
+    "type": "page"
+  },
+  "contact": {
+    "title": "联系我们 ↗",
+    "type": "page",
+    "href": "https://deeppuma.com/",
+    "newWindow": true
+  }
+}

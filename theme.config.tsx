@@ -27,6 +27,10 @@ const config: DocsThemeConfig = {
       titleTemplate: '%s – MakiFBT'
     }
   },
+  i18n: [
+    { locale: 'en', text: 'English' },
+    { locale: 'zh', text: '中文' },
+  ]
 }
 
 export default config

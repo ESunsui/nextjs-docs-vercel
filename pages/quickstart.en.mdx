@@ -1,135 +1,77 @@
-# 快速开始 Quick Start
-
-接下来的步骤会帮助你快速的上手MakiFBT
+# Quick Start
 
 The next steps will help you quickly get started with MakiFBT
 
-## 打印ArUco贴纸 Print ArUco pattern
-
-ArUco是一个开源的小型的AR虚拟现实增强库。一个ArUco标记外围都有一组黑色边框，同时内部有着确定该标记ID的二维矩阵组合而成。黑色的边框能加速标记在图像中的检测速度，内部的二维编码能唯一识别该标记，同时进行错误检测和错误修复。
+## Print ArUco pattern
 
 ArUco is an open source small AR virtual reality augmentation library. An ArUco mark has a set of black borders on the periphery, and a two-dimensional matrix that determines the mark ID inside. The black border can speed up the detection speed of the mark in the image, and the internal two-dimensional code can uniquely identify the mark, and perform error detection and error correction at the same time.
-
-在MakiFBT中，我们使用如下的ArUco图案
 
 In MakiFBT we use the ArUco pattern as follows
 
 ![ArUcoTag](image/ArUco.png#pic_center=256x256 "ArUco")
 
-将图案打印到白色的A4纸上(使用全页照片，并取消适应边框打印。图案应该不发生变形的占据纸张的尽可能多的空间)，我们的ArUco贴纸便制作完成了。
-
 Print the pattern on a white A4 paper (use a full-page photo, and cancel the fit frame printing. The pattern should occupy as much space as possible on the paper without deformation), and our ArUco pattern is finished.
 
-## Android手机设置 Android Settings
-
-**目前**我们只支持安卓设备。
+## Android Settings
 
 **Currently** we only support Android devices.
 
-### MakiAndroid设置 MakiAdnroid Setup
-
-我们使用两台Android手机进两个视角的动作捕捉，由此取得比同类型的单摄像头解决方案更高的捕捉精度和更好的效果。
+### MakiAdnroid Setup
 
 We use two Android mobile phones to capture motion from two perspectives, thus achieving higher capture accuracy and better results than the same type of single-camera solutions.
 
-Apk可以在[这里](https://drive.google.com/drive/my-drive)进行下载。
-
 Apk can be download [HERE](https://drive.google.com/drive/my-drive).
-
-为了运行MakiAndroid，您的手机需要有Android9或以上的系统，以及至少一个后置摄像头。手机的运算性能会直接影响动作捕捉的精确度与流畅度，如果您有多台设备的话推荐使用较好的一些。
 
 In order to run MakiAndroid, your phone needs to have Android9 or above, and at least one rear camera. The computing performance of the mobile phone will directly affect the accuracy and fluency of motion capture. If you have multiple devices, it is recommended to use better ones.
 
-Android手机需要与电脑连接到同一个局域网下。
-
 The Android phone needs to be connected to the same LAN as the computer.
 
-### 设备的摆放 Equipment Placement
-
-还记得我们一开始打印的ArUco图案吗？现在我们需要使用它了！将ArUco放置在平坦、浅色的地面上，保证周围活动范围内的空旷。对于有VR使用经验的玩家来说：将图案放置在你的安全区中心。
+### Equipment Placement
 
 Remember the ArUco pattern we printed at the beginning? Now we need to use it! Place the ArUco on a flat, light-colored ground, and keep the surrounding area open. For players with VR experience: place the pattern in the center of your safe zone.
 
-设备的摆放需要遵循以下一些原则。
-
 The placement of equipment should follow the following principles.
-
-手机必需竖屏使用，使用后置摄像头进行拍摄。(如果您不清楚什么是后置：手机屏幕到您眼睛的方向定义为前向，与其相反的一面称为后向。)
 
 The mobile phone must be used with a vertical screen, and the rear camera is used for shooting. (In case you don't know what rear is: the direction from the phone screen to your eyes is defined as the front, and the opposite side is called the rear.)
 
-在方位的选择上，如果您使用两台手机的典型配置，有如下一些位置可供选择：
-
 In terms of location selection, if you use the typical configuration of two mobile phones, there are some locations to choose from:
 
-- 左前方45度与右前方45度。
-- 正前方与正左(右)方。
-- 您与两台设备构成的角应该在80到120度之间。
- 
 - 45 degrees left front and 45 degrees right front.
 - Straight ahead and straight left (right).
 - The angle you make with the two devices should be between 80 and 120 degrees.
 
-确定好方位后，手机到游玩区中心的距离应该在3-4米左右。在达不到的情况下，确保他们尽可能的远。
-
 After determining the orientation, the distance from the mobile phone to the center of the play area should be about 3-4 meters. Make sure they are as far away as possible if you can't reach the suggested distance.
-
-使用支架或者其他方式可靠的固定手机，避免他们发生晃动与位移。手机高度应该在1.4-1.8米之间，略微有俯视角，可以清晰的拍摄到ArUco图案(打开相机做确认)。
 
 Use brackets or other methods to reliably fix the mobile phone to prevent them from shaking and shifting. The height of the mobile phone should be between 1.4-1.8 meters, with a slight overlooking angle, and the ArUco pattern can be clearly captured (turn on the camera to confirm).
 
-牢记！摄像头可以拍摄到的范围是可靠的动作捕捉范围。最终的动作捕捉区域是多台设备的交集而不是并集。
-
 keep in mind! The range the camera can capture is reliable motion capture range. The final motion capture area is the intersection rather than the union of multiple devices.
 
-### 手机端运行 Run on mobile
-
-放置好手机后，打开MakiAndroid，点击“Take Image”按钮，拍摄一张图片。图片将会被用来校准设备，图片的要求请参照上一章节所述。
+### Run on mobile
 
 After placing the phone, open MakiAndroid, click the "Take Image" button, and take a picture. The picture will be used to calibrate the device, please refer to the previous chapter for the picture requirements.
 
-一旦图片拍摄完成就不要再移动设备了！在所有手机都拍摄完成图片之前，也不要移动ArUco图形。如果所有设备都拍摄完成，ArUco图案就可以被移除。如果设备意外发生移动，重新摆放ArUco图案，并且在每一台设备上重新拍摄图片。
-
 Never move your device once the picture is taken! Also don't move the ArUco graphics until all phones have finished taking pictures. The ArUco pattern can be removed once all equipment has completed the shooting operation. If devices are accidentally moved, ArUco patterns are rearranged and pictures are re-taken on each device.
-
-手机端的设置到这里就完成了。请保持APP的前台状态，并保持手机有充足的电量。
 
 The setting of the mobile terminal is completed here. Please keep the APP in the foreground state, and keep the phone with sufficient power.
 
-## 电脑上的设置 Personal Computer Settings
+## Personal Computer Settings
 
-### VMT设置 VMT Setup
-
-Virtual Motion Tracker (VMT) 是一种易于使用的 OpenVR 虚拟跟踪器驱动程序。 您可以使用 OSC 协议发送姿势（位置和旋转）并将其用作 SteamVR 上的虚拟跟踪器。 您可以在 [VirtualMotionTrackerDocument](https://gpsnmeajp.github.io/VirtualMotionTrackerDocument/)上了解有关 VMT 的更多信息。
+### VMT Setup
 
 Virtual Motion Tracker(VMT) is an easy-to-use virtual tracker driver for OpenVR. You can send pose (position and rotation) with OSC Protocol and use it as a virtual tracker on SteamVR. You can learn more about VMT on [VirtualMotionTrackerDocument](https://gpsnmeajp.github.io/VirtualMotionTrackerDocument/).
 
-MakiFBT 需要VMT与SteamVR通信。 没有VMT系统将无法工作。
-
 MakiFBT Requires VMT to communicate with SteamVR. System will not work without VMT.
-
-我们在 vmt_013c 上测试了我们的系统。 您可以[在此处下载](https://github.com/gpsnmeajp/VirtualMotionTracker/releases/download/v0.13c/vmt_013c.zip)。
 
 We tested our system on vmt_013c. You can download [HERE](https://github.com/gpsnmeajp/VirtualMotionTracker/releases/download/v0.13c/vmt_013c.zip).
 
-可以在[VMT发布页面](https://github.com/gpsnmeajp/VirtualMotionTracker/releases)上找到较新版本的 VMT。 但是，不能保证性能。
-
 Newer version of VMT can be found on [VMT Release Page](https://github.com/gpsnmeajp/VirtualMotionTracker/releases). HOWEVER, performance is not guaranteed.
-
-要安装 VMT，请解压缩存档，打开vmt_manager文件夹，在运行SteamVR并连接VR设备的情况下运行vmt_manager.exe。单击安装，VMT就会被添加到SteamVR的驱动中。
 
 To install VMT, unzip the archive, open **vmt_manager** folder, run **vmt_manager.exe** with SteamVR running and VR devices connected. Click install and you are ready to go.
 
-### MakiFBT设置 MakiFBT Setup
-
-要使用MakiFBT进行动作捕捉，请在[这里](https://drive.google.com/drive/my-drive)下载MakiFBT的电脑端软件。
+### MakiFBT Setup
 
 To use MakiFBT, download our software for windows [Here](https://drive.google.com/drive/my-drive).
 
-请首先启动SteamVR和MakiFBT的Android端，随后启动MakiFBT的电脑端。错误的顺序不会造成影响，但是可能需要额外的操作。
-
 **Please start SteamVR and the Android side of MakiFBT first, start the computer side of MakiFBT afterward.** Wrong order cause no negative effect, but may requires additional operation.
-
-在MakiFBT正常启动的场合，您可以在SteamVR的设备界面以及VR世界中看到额外的VMT设备。
 
 When MakiFBT starts normally, you can see the extra VMT device in the device interface of SteamVR and in the VR world as well.

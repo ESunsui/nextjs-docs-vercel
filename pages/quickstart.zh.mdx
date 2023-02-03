@@ -1,0 +1,77 @@
+# 快速开始
+
+接下来的步骤会帮助你快速的上手MakiFBT
+
+## 打印ArUco贴纸
+
+ArUco是一个开源的小型的AR虚拟现实增强库。一个ArUco标记外围都有一组黑色边框，同时内部有着确定该标记ID的二维矩阵组合而成。黑色的边框能加速标记在图像中的检测速度，内部的二维编码能唯一识别该标记，同时进行错误检测和错误修复。
+
+在MakiFBT中，我们使用如下的ArUco图案
+
+![ArUcoTag](image/ArUco.png#pic_center=256x256 "ArUco")
+
+将图案打印到白色的A4纸上(使用全页照片，并取消适应边框打印。图案应该不发生变形的占据纸张的尽可能多的空间)，我们的ArUco贴纸便制作完成了。
+
+## Android手机设置
+
+**目前**我们只支持安卓设备。
+
+### MakiAndroid设置
+
+我们使用两台Android手机进两个视角的动作捕捉，由此取得比同类型的单摄像头解决方案更高的捕捉精度和更好的效果。
+
+Apk可以在[这里](https://drive.google.com/drive/my-drive)进行下载。
+
+为了运行MakiAndroid，您的手机需要有Android9或以上的系统，以及至少一个后置摄像头。手机的运算性能会直接影响动作捕捉的精确度与流畅度，如果您有多台设备的话推荐使用较好的一些。
+
+Android手机需要与电脑连接到同一个局域网下。
+
+### 设备的摆放
+
+还记得我们一开始打印的ArUco图案吗？现在我们需要使用它了！将ArUco放置在平坦、浅色的地面上，保证周围活动范围内的空旷。对于有VR使用经验的玩家来说：将图案放置在你的安全区中心。
+
+设备的摆放需要遵循以下一些原则。
+
+手机必需竖屏使用，使用后置摄像头进行拍摄。(如果您不清楚什么是后置：手机屏幕到您眼睛的方向定义为前向，与其相反的一面称为后向。)
+
+在方位的选择上，如果您使用两台手机的典型配置，有如下一些位置可供选择：
+
+- 左前方45度与右前方45度。
+- 正前方与正左(右)方。
+- 您与两台设备构成的角应该在80到120度之间。
+
+确定好方位后，手机到游玩区中心的距离应该在3-4米左右。在达不到的情况下，确保他们尽可能的远。
+
+使用支架或者其他方式可靠的固定手机，避免他们发生晃动与位移。手机高度应该在1.4-1.8米之间，略微有俯视角，可以清晰的拍摄到ArUco图案(打开相机做确认)。
+
+牢记！摄像头可以拍摄到的范围是可靠的动作捕捉范围。最终的动作捕捉区域是多台设备的交集而不是并集。
+
+### 手机端运行
+
+放置好手机后，打开MakiAndroid，点击“Take Image”按钮，拍摄一张图片。图片将会被用来校准设备，图片的要求请参照上一章节所述。
+
+一旦图片拍摄完成就不要再移动设备了！在所有手机都拍摄完成图片之前，也不要移动ArUco图形。如果所有设备都拍摄完成，ArUco图案就可以被移除。如果设备意外发生移动，重新摆放ArUco图案，并且在每一台设备上重新拍摄图片。
+
+手机端的设置到这里就完成了。请保持APP的前台状态，并保持手机有充足的电量。
+
+## 电脑上的设置
+
+### VMT设置
+
+Virtual Motion Tracker (VMT) 是一种易于使用的 OpenVR 虚拟跟踪器驱动程序。 您可以使用 OSC 协议发送姿势（位置和旋转）并将其用作 SteamVR 上的虚拟跟踪器。 您可以在 [VirtualMotionTrackerDocument](https://gpsnmeajp.github.io/VirtualMotionTrackerDocument/)上了解有关 VMT 的更多信息。
+
+MakiFBT 需要VMT与SteamVR通信。 没有VMT系统将无法工作。
+
+我们在 vmt_013c 上测试了我们的系统。 您可以[在此处下载](https://github.com/gpsnmeajp/VirtualMotionTracker/releases/download/v0.13c/vmt_013c.zip)。
+
+可以在[VMT发布页面](https://github.com/gpsnmeajp/VirtualMotionTracker/releases)上找到较新版本的 VMT。 但是，不能保证性能。
+
+要安装 VMT，请解压缩存档，打开vmt_manager文件夹，在运行SteamVR并连接VR设备的情况下运行vmt_manager.exe。单击安装，VMT就会被添加到SteamVR的驱动中。
+
+### MakiFBT设置
+
+要使用MakiFBT进行动作捕捉，请在[这里](https://drive.google.com/drive/my-drive)下载MakiFBT的电脑端软件。
+
+请首先启动SteamVR和MakiFBT的Android端，随后启动MakiFBT的电脑端。错误的顺序不会造成影响，但是可能需要额外的操作。
+
+在MakiFBT正常启动的场合，您可以在SteamVR的设备界面以及VR世界中看到额外的VMT设备。
