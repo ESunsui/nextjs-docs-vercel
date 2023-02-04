@@ -13,7 +13,7 @@ const config: DocsThemeConfig = {
   },
   logo: <span>
   <svg
-    height="38"
+    height="28"
     viewBox="0 0 300 80"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
